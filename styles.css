@@ -139,7 +139,8 @@ nav,.scroll,.header{
 .dark-theme .section__sub-title,
 .dark-theme .nav__link--anchor,
 .dark-theme .fa-adjust,
-.dark-theme .header__para
+.dark-theme .header__para,
+.dark-theme .language__name-stack
 {
   color: white;
 }
@@ -179,13 +180,25 @@ nav,.scroll,.header{
   width: 100%;
   max-width: 1000px;
   padding: 0 30px;
+transition: all 500ms ease-in;
+  animation: headerAnimation 500ms ease-in forwards;
+
 }
 .header__para {
   font-size: 24px;
   line-height: 2;
   max-width: 450px;
 }
-
+@keyframes headerAnimation {
+  0% {
+    /* Start from the right (100% to the right of its starting position) */
+    transform: translate(150%, -50%);
+  }
+  100% {
+    /* End at its final position, which is centered */
+    transform: translate(-50%, -50%);
+  }
+}
 .social__list {
   margin-top: 16px;
   display: flex;
@@ -337,7 +350,7 @@ nav {
 }
 
 .modal__language {
-  width: 25%;
+  width: calc(100%/3);
   padding: 16px;
   position: relative;
   display: flex;
@@ -363,7 +376,7 @@ nav {
 }
 
 .modal__language--img {
-  width: 100%;
+  width: 50%;
 }
 
 .modal__contact {
@@ -464,6 +477,56 @@ nav {
   font-size: 36px;
   z-index: 100;
 }
+
+
+/* Languages */
+.language__img {
+  width: 100%;
+  max-width: 100px;
+  transition: all 300ms;
+}
+.language:hover .language__img {
+  filter: brightness(80%);
+  opacity: 0.86;
+  transform: scale(0.9);
+}
+
+.language {
+  width: calc(100%/3);
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+}
+
+.language__img--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 16px;
+}
+
+.language__list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.language__name-stack {
+  position: absolute;
+  bottom: 0;
+  transform: scale(0);
+  transition: all 300ms;
+  font-size: 20px;
+  opacity: 0;
+}
+.language:hover .language__name-stack {
+  transform: scale(1);
+  opacity: 1;
+}
+
+
 /* Projects */
 .section__title {
   text-align: center;
@@ -497,7 +560,31 @@ nav {
   transform: scale(1.07);
   filter: blur(5px);
 }
+.about-me__picture--mask{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 8 16 rgba(0, 0, 0, 1);
+    margin-bottom: 16px;
+      animation: animate-profile-picture 800ms 200ms backwards;
 
+}
+
+@keyframes animate-profile-picture {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.about-me__picture{
+ width: 100%;
+}
 .project__description {
   position: absolute;
   top: 50%;
