@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="index.js">Defer</script>
-  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
@@ -57,7 +56,7 @@
 
 <p class="header__para">An Enthusiastic <b class="blue">Full-Stack Developer</b>  with a flair for crafting elegant solutions in software development. Driven by passion, constantly exploring new technologies to create impactful web experiences
 <br>
- Heres a bit more <b class="blue link__hover-effect click" onclick="toggleModal()">about me.</b>
+ Heres a bit more <b class="blue bluelink__hover-effect click" onclick="toggleModal()">about me.</b>
 </p>
 <div class="social__list">
 <a href="https://ca.linkedin.com/in/bilal-syed-abdali-88b5401aa" target="_blank" class="social__link click"> 
@@ -260,131 +259,18 @@
         <h1 class="section__title">
           Here are some of my <span class="blue">projects</span>
         </h1>
- <ul class="project__list">
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="./assets/assets/google mockup.png" class="project__img" alt="">
-              <div class="project__wrapper--bg"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">
-                  Google In-Store
-                </h3>
-                <h4 class="project__description--sub-title">
-                  Html, CSS, JavaScript, Vue, Vuex
-                </h4>
-                <p class="project__description--para">
-                  Google In-Store is a platform allowing Google retail employees to report any issues with their
-                  store products. Once an issue is reported, it is posted to an API which populates a separate
-                  platform's frontend - which is used by Google's vendors to fix the issue as soon as possible. I was
-                  the sole
-                  front-end developer of this application.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://googleinstore.com.au/" class="project__description--link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                  <a href="https://googleinstore.com.au/" class="project__description--link">
-                    <i class="fab fa-github"></i>
-                  </a>
-             
-                </div>
-              </div>
-            </div>
-          </li>
-               <li class="project">
-            <div class="project__wrapper">
-              <img src="./assets/assets/google mockup.png" class="project__img" alt="">
-              <div class="project__wrapper--bg"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">
-                  Google In-Store
-                </h3>
-                <h4 class="project__description--sub-title">
-                  Html, CSS, JavaScript, Vue, Vuex
-                </h4>
-                <p class="project__description--para">
-                  Google In-Store is a platform allowing Google retail employees to report any issues with their
-                  store products. Once an issue is reported, it is posted to an API which populates a separate
-                  platform's frontend - which is used by Google's vendors to fix the issue as soon as possible. I was
-                  the sole
-                  front-end developer of this application.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://googleinstore.com.au/" class="project__description--link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                  <a href="https://googleinstore.com.au/" class="project__description--link">
-                    <i class="fab fa-github"></i>
-                  </a>
-             
-                </div>
-              </div>
-            </div>
-          </li>
-               <li class="project">
-            <div class="project__wrapper">
-              <img src="./assets/assets/google mockup.png" class="project__img" alt="">
-              <div class="project__wrapper--bg"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">
-                  Google In-Store
-                </h3>
-                <h4 class="project__description--sub-title">
-                  Html, CSS, JavaScript, Vue, Vuex
-                </h4>
-                <p class="project__description--para">
-                  Google In-Store is a platform allowing Google retail employees to report any issues with their
-                  store products. Once an issue is reported, it is posted to an API which populates a separate
-                  platform's frontend - which is used by Google's vendors to fix the issue as soon as possible. I was
-                  the sole
-                  front-end developer of this application.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://googleinstore.com.au/" class="project__description--link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                  <a href="https://googleinstore.com.au/" class="project__description--link">
-                    <i class="fab fa-github"></i>
-                  </a>
-             
-                </div>
-              </div>
-            </div>
-          </li>
-               <li class="project">
-            <div class="project__wrapper">
-              <img src="./assets/assets/google mockup.png" class="project__img" alt="">
-              <div class="project__wrapper--bg"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">
-                  Google In-Store
-                </h3>
-                <h4 class="project__description--sub-title">
-                  Html, CSS, JavaScript, Vue, Vuex
-                </h4>
-                <p class="project__description--para">
-                  Google In-Store is a platform allowing Google retail employees to report any issues with their
-                  store products. Once an issue is reported, it is posted to an API which populates a separate
-                  platform's frontend - which is used by Google's vendors to fix the issue as soon as possible. I was
-                  the sole
-                  front-end developer of this application.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://googleinstore.com.au/" class="project__description--link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                  <a href="https://googleinstore.com.au/" class="project__description--link">
-                    <i class="fab fa-github"></i>
-                  </a>
-             
-                </div>
-              </div>
-            </div>
-          </li>
-    </div>
+        <div class="btn__wrapper">
+          <button class="btn__projects" onclick="highlightButton(this),renderCards()" >All</button>
+          <button class="btn__projects" onclick="highlightButton(this),renderCards('Full-Stack')">Full-Stack</button>
+          <button class="btn__projects" onclick="highlightButton(this),renderCards('Java')">Java</button>      
+          <button class="btn__projects" onclick="highlightButton(this),renderCards('C')">C</button>
+          <button class="btn__projects" onclick="highlightButton(this),renderCards('Scripts')">Scripts</button>
 
+        </div>
+  <div class="project__list">
 </div>
-
+      </div>
+      </div>
 
 </section>
 <footer>
@@ -435,3 +321,4 @@
   </footer>
 </body>
 </html>
+    <script src="index.js">Defer</script>
