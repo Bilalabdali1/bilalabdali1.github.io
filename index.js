@@ -48,10 +48,10 @@ async function renderCards(filter) {
                   ${project.paragraph}
                 </p>
                 <div class="project__description--links">
-                  <a href="https://googleinstore.com.au/" class="project__description--link">
+                  <a href=${project.url} target="_blank" class="project__description--link">
                     <i class="fas fa-link"></i>
                   </a>
-                  <a href="https://googleinstore.com.au/" class="project__description--link">
+                  <a href=${project.github} target="_blank" class="project__description--link">
                     <i class="fab fa-github"></i>
                   </a>
                 </div>       
@@ -136,6 +136,8 @@ function getProjects() {
           paragraph:
             "Hoops Legacy Collectibles is an e-commerce platform crafted for NBA trading card enthusiasts, offering a responsive and secure environment for buying and selling authenticated cards. Built with React, the site boasts advanced filtering options, a streamlined shopping cart, and secure checkout powered by Stripe. A Node.js backend ensures reliable data management and a robust connection to the database. ",
           category: "Full-Stack",
+          github: "https://github.com/Bilalabdali1/nba-trading-cards",
+          url:"https://nba-trading-cards.vercel.app/",
         },
         {
           id: 2,
