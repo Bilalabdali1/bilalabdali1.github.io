@@ -147,6 +147,8 @@ function getProjects() {
           paragraph:
             "Google In-Store is a platform allowing Google retail employees to report any issues with their store products. Once an issue is reported, it is posted to an API which populates a separate platform's frontend - which is used by Google's vendors to fix the issue as soon as possible. I was the sole front-end developer of this application.",
           category: "Full-Stack",
+           github: "https://github.com/Bilalabdali1/nba-trading-cards",
+          url:"https://nba-trading-cards.vercel.app/",
         },
         {
           id: 3,
@@ -156,6 +158,8 @@ function getProjects() {
           paragraph:
             "TripShare is a travel-focused Android app that blends social networking with practical trip planning. Users engage with a community of travelers, discover local activities, and gain inspiration for new trips. The app supports itinerary sharing and collaborative planning, underpinned by Firebase for seamless data handling. Developed using Java and XML, TripShare connects adventure seekers and streamlines the travel experience.",
           category: "Java",
+           github: "https://github.com/Bilalabdali1/TripShare",
+          url:"https://github.com/Bilalabdali1/TripShare",
         },
 
         {
@@ -166,6 +170,8 @@ function getProjects() {
           paragraph:
             "The Nike Sneaker Automation Bot is an automation tool designed to facilitate the online purchasing of limited-edition Nike sneakers. It efficiently handles the entire checkout process, supports multiple accounts, and utilizes proxies to enhance success rates in sneaker raffles using Node.js and Puppeteer.",
           category: "Scripts",
+           github: "https://github.com/Bilalabdali1/Sneaker-Automation-Bot",
+          url:"https://github.com/Bilalabdali1/Sneaker-Automation-Bot",
         },
         {
           id: 5,
@@ -176,6 +182,8 @@ function getProjects() {
           paragraph:
             "The Virtual Memory Management Unit (MMU) Simulator is a advanced simulation tool that models address translation within a virtual memory system, employing a TLB and page table. It showcases demand paging, TLB FIFO management, and LRU page replacement within a 65,536-byte address space. The simulator serves as a powerful resource for delving into the mechanics of memory management.",
           category: "C",
+           github: "https://github.com/Bilalabdali1/nba-trading-cards",
+          url:"https://nba-trading-cards.vercel.app/",
         },
         {
           id: 6,
@@ -185,6 +193,8 @@ function getProjects() {
           paragraph:
             "The Virtual Hospital Management System is a sophisticated Java-based application designed to simulate real-world hospital operations. Utilizing object-oriented principles it efficiently manages physicians, administrators, volunteers, and patients. Key features include specialized physician management, volunteer coordination, and robust exception handling, ensuring a scalable and data-secure environment for virtual healthcare management.",
           category: "Java",
+           github: "https://github.com/Bilalabdali1/nba-trading-cards",
+          url:"https://nba-trading-cards.vercel.app/",
         },
         {
           id: 7,
@@ -194,6 +204,8 @@ function getProjects() {
           paragraph:
             "The CPU Scheduling Algorithms Simulator, developed in C, models CPU scheduler operations using algorithms like FCFS, SJF, and Round-Robin. It assigns tasks with priorities from 1 to 10 and executes them using a structured approach with linked lists and scheduling functions. This tool effectively demonstrates various scheduling strategies in operating systems, serving as a practical educational resource.",
           category: "C",
+           github: "https://github.com/Bilalabdali1/nba-trading-cards",
+          url:"https://nba-trading-cards.vercel.app/",
         },
         {
           id: 8,
@@ -203,6 +215,8 @@ function getProjects() {
           paragraph:
             "CinemaGraph API utilizes the Neo4j graph database to uncover the intricate connections within the film industry, including the 'Six Degrees of Kevin Bacon,' enabling users to seamlessly add, query actors and movies, establish relationships, and compute the shortest paths within the cinematic network. The API follows RESTful principles and is built with Java, Neo4j, and Maven, featuring comprehensive tests for endpoint functionality and reliability.",
           category: "Java",
+           github: "https://github.com/Bilalabdali1/nba-trading-cards",
+          url:"https://nba-trading-cards.vercel.app/",
         },
       ]);
     });
