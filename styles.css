@@ -835,4 +835,21 @@ footer {
   .modal__half {
     padding: 40px;
   }
+  .btn__wrapper{
+    display: none;
+  }
+  .project {
+  width: 100%; /* Adjust width to ensure two projects per line, accounting for some margins */
+  }
+
+.project__img {
+ height:350px;
+  width: 100%;
+  transition: all 600ms ease;
+}
+.project__list {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of child elements */
+  justify-content: flex-start
+}
 }
