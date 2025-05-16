@@ -1,6 +1,6 @@
 let isModalOpen = false;
 let contrastToggle = false;
-
+document.body.classList += " dark-theme";
 const scaleFactor = 1 / 20;
 renderCards();
 async function renderCards(filter) {
@@ -66,9 +66,9 @@ async function renderCards(filter) {
 function toggleContrast() {
   contrastToggle = !contrastToggle;
   if (contrastToggle) {
-    document.body.classList += " dark-theme";
+        document.body.classList.remove("dark-theme");
   } else {
-    document.body.classList.remove("dark-theme");
+        document.body.classList += " dark-theme";
   }
 }
 function highlightButton(selectedButton) {
